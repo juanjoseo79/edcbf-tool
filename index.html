@@ -163,8 +163,8 @@ function generarMensaje({saludo,horaIni,horaFin,etapas,mw,mexGua,nuevamente,tipo
   const nv=nuevamente?"nuevamente ":"";
   const ESQUEMA="Esquema de Desconexión de Carga por Baja Frecuencia (EDCBF)";
   let msg=saludo;
-  if(horaFin) msg+=`De las ${horaIni} a ${horaFin} horas, ${nv}operación de ${et} del ${ESQUEMA}`;
-  else msg+=`A las ${horaIni} horas, ${nv}operación de ${et} del ${ESQUEMA}`;
+  if(horaFin) msg+=`de las ${horaIni} a ${horaFin} horas, ${nv}operación de ${et} del ${ESQUEMA}`;
+  else msg+=`a las ${horaIni} horas, ${nv}operación de ${et} del ${ESQUEMA}`;
   if(tipo==="regional"){
     if(mw) msg+=`, perdiéndose ${mw} MW de carga`;
     msg+=" por evento regional";
